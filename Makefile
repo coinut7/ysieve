@@ -22,8 +22,9 @@
 
 CC = gcc
 CFLAGS = -g
+CFLAGS += -march=native -mtune=native
 WARN_FLAGS = -Wall # -Wconversion
-OPT_FLAGS = -O3 -march=native -mtune=native
+OPT_FLAGS = -O3 
 INC = -I. -I../ytools
 LIBS = -L../ytools
 BINNAME = ysieve
