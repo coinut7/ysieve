@@ -21,10 +21,10 @@
 # SOFTWARE.
 
 CC = gcc
-CFLAGS = -g
-CFLAGS += -march=native -mtune=native
+CFLAGS = -g -m64
+CFLAGS += -mtune=znver2 -march=znver2
 WARN_FLAGS = -Wall # -Wconversion
-OPT_FLAGS = -O3 
+OPT_FLAGS = -O2
 INC = -I. -I../ytools
 LIBS = -L../ytools
 BINNAME = ysieve
