@@ -21,7 +21,7 @@
 # SOFTWARE.
 
 CC = gcc
-CFLAGS = -g -m64
+CFLAGS = -g -m64 -DUSE_AVX2
 CFLAGS += -mtune=znver2 -march=znver2
 WARN_FLAGS = -Wall # -Wconversion
 OPT_FLAGS = -O2
