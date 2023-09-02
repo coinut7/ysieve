@@ -24,7 +24,7 @@ CC = gcc
 CFLAGS = -g -m64 -std=gnu99 -DUSE_SSE2 -fno-common
 CFLAGS += -mtune=znver2 -march=znver2
 WARN_FLAGS = -Wall # -Wconversion
-OPT_FLAGS = -O2
+OPT_FLAGS = -O3
 INC = -I. -I../ytools
 LIBS = -L../ytools
 BINNAME = ysieve
